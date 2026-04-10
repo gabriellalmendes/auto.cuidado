@@ -19,5 +19,5 @@ O CareMind é uma aplicação simples e direta que calcula a meta diária de ág
    - `npm install`
    - `npm test`
 
-## Qualidade do Projeto
+# Qualidade do Projeto
 Este projeto utiliza **Versionamento Semântico** e possui uma pipeline de **CI** que testa o código automaticamente a cada atualização.
