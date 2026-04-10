@@ -1,0 +1,17 @@
+{
+    "name": "caremind-cli",
+    "version": "1.0.0",
+    "description": "Ferramenta de CLI para controle de hidratação e autocuidado.",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js",
+      "test": "jest",
+      "lint": "eslint src/**"
+    },
+    "author": "Seu Nome",
+    "license": "MIT",
+    "devDependencies": {
+      "eslint": "^8.57.0",
+      "jest": "^29.7.0"
+    }
+  }
