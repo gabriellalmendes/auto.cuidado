@@ -12,3 +12,14 @@ test('Deve sugerir descanso de vista no período da tarde (Caso Limite/Regra)', 
   const sugestao = obterSugestaoChecklist(15);
   expect(sugestao).toContain("descansar a vista");
 });
+
+// Importa a função que você acabou de colocar no logic.js
+const { buscarDicaAutocuidado } = require('./logic');
+
+test('Deve integrar com a API e retornar uma dica válida em formato de texto', async () => {
+  const dica = await buscarDicaAutocuidado();
+  
+  // Verifica se o resultado é um texto (string) e se não veio vazio
+  expect(typeof dica).toBe('string'); 
+  expect(dica.length).toBeGreaterThan(0);
+});
