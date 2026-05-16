@@ -21,3 +21,6 @@ O CareMind é uma aplicação simples e direta que calcula a meta diária de ág
 
 ## Qualidade do Projeto
 Este projeto utiliza **Versionamento Semântico** e possui uma pipeline de **CI** que testa o código automaticamente a cada atualização.
+
+# CareMind - Autocuidado e Hidratação
+🚀 **Link do Projeto Online: https://auto-cuidado-wheat.vercel.app/

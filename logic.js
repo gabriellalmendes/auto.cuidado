@@ -22,3 +22,20 @@ const calcularMetaAgua = (peso) => {
   };
   
   module.exports = { calcularMetaAgua, verificarMetaAtingida, obterSugestaoChecklist };
+
+// Função para buscar conselho/dica de autocuidado na API pública
+async function buscarDicaAutocuidado() {
+  try {
+    const resposta = await fetch('https://api.adviceslip.com/advice');
+    const dados = await resposta.json();
+    return dados.slip.advice; // Retorna a frase vinda da internet
+  } catch (erro) {
+    console.error("Erro ao conectar na API:", erro);
+    return "Beba água e cuide de si mesmo hoje!"; // Resposta padrão caso falhe
+  }
+}
+
+// Garante a exportação para podermos testar depois
+if (typeof module !== 'undefined') {
+  module.exports = { buscarDicaAutocuidado };
+}
